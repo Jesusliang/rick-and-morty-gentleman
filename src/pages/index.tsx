@@ -82,7 +82,7 @@ const Home: NextPage = () => {
                   fontSize="1.5rem"
                   padding="1rem"
                 >
-                  Adivina de que planeta es!
+                  Adivina de que planeta es {character?.name}!
                 </Text>
                 <Box
                   display="flex"
