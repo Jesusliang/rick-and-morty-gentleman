@@ -7,4 +7,5 @@ export interface Character {
   status: CharacterStatus
   species: string
   gender: CharacterGender
+  image: string
 }
