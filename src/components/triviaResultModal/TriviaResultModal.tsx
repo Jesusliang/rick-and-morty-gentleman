@@ -30,7 +30,15 @@ const TriviaResultModal: React.FC<TriviaResultModalProps> = ({
   ...props
 }) => {
   return (
-    <Modal size="xs" onClose={() => {}} {...props}>
+    <Modal
+      size={{
+        base: "xs",
+        md: "md"
+      }}
+      onClose={() => {}}
+      isCentered
+      {...props}
+    >
       <ModalOverlay />
       <ModalContent>
         <ModalBody>
