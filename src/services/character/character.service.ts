@@ -11,7 +11,7 @@ export const getAll = async () => {
   // return adaptedData
 }
 
-export const getOne = async (characterId: string): Promise<Character> => {
+export const getOne = async (characterId: number): Promise<Character> => {
   const res = await axios.get<ApiCharacter>(
     `https://rickandmortyapi.com/api/character/${characterId}`
   )
@@ -20,5 +20,6 @@ export const getOne = async (characterId: string): Promise<Character> => {
 }
 
 export const character = {
-  getAll
+  getAll,
+  getOne
 }
