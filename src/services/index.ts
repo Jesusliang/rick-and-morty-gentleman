@@ -1,3 +1,5 @@
 export * from "./character/character.service"
 export * from "./character/character.service.types"
+export * from "./location/location.service"
+export * from "./location/location.service.types"
 export * from "./services"
