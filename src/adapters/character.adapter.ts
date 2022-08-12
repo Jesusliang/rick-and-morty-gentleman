@@ -8,6 +8,7 @@ export const characterAdapter = (data: ApiCharacter): Character => {
     status: data.status,
     gender: data.gender,
     species: data.species,
-    image: data.image
+    image: data.image,
+    location: data.location
   }
 }
