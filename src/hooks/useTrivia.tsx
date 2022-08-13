@@ -19,7 +19,7 @@ const useTrivia = () => {
   const initialCall = useCallback(async () => {
     const randomCharacterId = getRandomIntByRange(0, CHARACTERS_COUNT)
     const response = await callAsync({
-      asyncFn: () => services.character.getOne(randomCharacterId)
+      asyncFn: services.character.getOne(randomCharacterId)
     })
     setCharacter(response)
     console.log(response)
@@ -32,7 +32,7 @@ const useTrivia = () => {
     while (options.length < 4) {
       const randomLocationId = getRandomIntByRange(0, LOCATIONS_COUNT)
       const resLocation = await callAsync({
-        asyncFn: () => services.location.getOne(randomLocationId)
+        asyncFn: services.location.getOne(randomLocationId)
       })
       if (!options.find((location) => location.name === resLocation.name))
         options.push({
